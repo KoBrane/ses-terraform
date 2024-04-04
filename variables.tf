@@ -1,6 +1,7 @@
 variable "domain" {
   description = "Domain identity to be verified"
   type        = string
+  default     = "dev.wilsconsult.com"
 }
 
 variable "rule_set_name" {
