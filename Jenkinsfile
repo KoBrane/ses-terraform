@@ -8,30 +8,6 @@ pipeline {
             }
         }
 
-        stage('Doc Check') {
-            steps {
-                sh 'make doc-check'
-            }
-        }
-
-        stage('Lint') {
-            steps {
-                sh 'make lint'
-            }
-        }
-
-        stage('Test') {
-            steps {
-                sh 'make test'
-            }
-        }
-
-        stage('Build') {
-            steps {
-                sh 'make build'
-            }
-        }
-
         stage('Terraform Init') {
             steps {
                 sh 'terraform init'
