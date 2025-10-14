@@ -1,5 +1,5 @@
 # Use the official Alpine Linux image as the base
-FROM alpine:3.17
+FROM alpine:3.22.2
 
 # Install required packages
 RUN apk --no-cache add curl bash git
